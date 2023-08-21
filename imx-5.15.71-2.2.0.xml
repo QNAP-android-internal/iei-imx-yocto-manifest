@@ -12,6 +12,8 @@
   <remote fetch="https://github.com/openembedded" name="oe"/>
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="https://github.com/nxp-imx-support" name="imx-support"/>
+  <remote fetch="https://github.com/QNAP-android-internal/" name="iei-github"/>
+
 
   <project name="fsl-community-bsp-base" path="sources/base" remote="community" revision="60f79f7af60537146298560079ae603260f0bd14" upstream="kirkstone">
     <linkfile dest="README" src="README"/>
@@ -36,8 +38,12 @@
   <project name="poky" path="sources/poky" remote="yocto" revision="24a3f7b3648185e33133f5d96b184a6cb6524f3d" upstream="kirkstone"/>
 
   <project name="meta-nxp-desktop" path="sources/meta-nxp-desktop" remote="nxp-imx" revision="refs/tags/rel_lf_5.15.71_2.2.0_ldp" upstream="lf-5.15.71-2.2.0-kirkstone" >
-    <linkfile src="tools/imx-setup-desktop.sh" dest="imx-setup-desktop.sh"/>
     <linkfile src="README.md" dest="README-DESKTOP"/>
   </project>
+
+  <project name="meta-iei-imx-bsp" path="sources/meta-iei-imx-bsp" remote="iei-github" revision="iei-kirkstone_5.15.71-2.2.0-next" >
+    <linkfile src="conf/iei-conf/iei-imx-setup-release.sh" dest="iei-imx-setup-release.sh"/>
+  </project>
+
 
 </manifest>
