@@ -43,6 +43,7 @@
   <project name="meta-matter" remote="imx" path="sources/meta-matter" revision="imx_matter_2024_q1-post" />
   <project name="meta-nxp-demo-experience" remote="imx-support" path="sources/meta-nxp-demo-experience" revision="scarthgap-6.6.23-2.0.0" />
 
+  <project name="meta-weston-remote-desktop" path="sources/meta-weston-remote-desktop" remote="iei-github" revision="iei-scarthgap_6.6.23-2.0.0-next" />
   <project name="meta-iei-imx-bsp" path="sources/meta-iei-imx-bsp" remote="iei-github" revision="iei-scarthgap_6.6.23-2.0.0-next" >
     <linkfile src="conf/iei-conf/iei-imx-setup-release.sh" dest="iei-imx-setup-release.sh"/>
   </project>
